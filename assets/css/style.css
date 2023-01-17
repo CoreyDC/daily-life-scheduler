@@ -17,6 +17,7 @@ textarea {
 }
 
 .time-block {
+  position: relative;
   border-radius: 15px;
 }
 
@@ -37,28 +38,49 @@ textarea {
 
 .past {
   background-color: #d3d3d3;
-  color: white;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
 }
 
 .saveBtn {
-  border-left: 3px solid black;
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
 }
 
+btn:hover {
+  cursor: pointer;
+}
+
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+#rmvBtn {
+  width: 75px;
+  height: 25px;
+  border: 1px solid #000000;
+  margin: 0 auto;
+  font-size: x-small;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 17%;
+}
+
+/* MEDIA Q'S FOR REMOVE BUTTON */
+@media screen and ( min-width: 768px ) {
+  #rmvBtn {
+    right: 8.5%;
+  }
 }
